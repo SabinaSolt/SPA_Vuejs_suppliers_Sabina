@@ -1,10 +1,11 @@
 <template>
-    <h2>Carte des fournisseurs</h2>
+    <h1>Carte des fournisseurs</h1>
 </template>
 
 <script>
     export default {
-        name: "SuppliersMap"
+        name: "SuppliersMap",
+
     }
 </script>
 
