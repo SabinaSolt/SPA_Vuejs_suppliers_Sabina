@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1 > Liste des fournisseurs: </h1>
-        <div >
+        <div  class="suppl-list">
             <Supplier v-for="supplier in suppliers"
                         :key="supplier.id"
                         :name="supplier.name"
@@ -50,5 +50,8 @@
 </script>
 
 <style scoped>
-
+    .suppl-list {
+        width:75%;
+        display: inline-block;
+    }
 </style>

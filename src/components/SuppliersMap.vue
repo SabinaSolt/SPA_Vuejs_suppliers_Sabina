@@ -1,5 +1,5 @@
 <template>
-    <div style="height: 80vh">
+    <div  class ="map-div" >
         <h1>Carte des fournisseurs</h1>
         <LMap :zoom="zoom" :center="center">
             <LTileLayer :url="url"></LTileLayer>
@@ -45,5 +45,9 @@
 </script>
 
 <style scoped>
-
+.map-div {
+    height: 80vh;
+    width: 80vw;
+    display: inline-block;
+}
 </style>

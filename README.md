@@ -296,6 +296,22 @@ Effectuez l’exercice pour une application Laravel, puis pour une application V
 
 **Votre réponse :**
 
+**Laravel :**
+
+Serveur web | Navigateur web
+--- | ---
+Stocker les données de l’application | Effectuer le rendu des pages web
+Router les requêtes HTTP | Afficher les pages web
+Exécuter le code métier de l’application| 
+
+**Vue.js :**
+
+Serveur web | Navigateur web
+--- | ---
+ Exécuter le code métier de l’application| Effectuer le rendu des pages web
+ ---| Afficher les pages web
+ ---| Stocker les données de l’application
+ ---|Router les requêtes HTTP
 
 Fin du préambule
 * * *
