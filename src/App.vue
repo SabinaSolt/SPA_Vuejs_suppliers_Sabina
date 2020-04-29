@@ -5,8 +5,8 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Que voulez vous faire?"/>
 
-    <router-link to="/suppliers"><h2>Consulter la liste des fournisseurs</h2></router-link>
-    <router-link to="/map"><h2> Voir la carte</h2></router-link>
+    <router-link to="/suppliers"><h2 class="menu-princip">Consulter la liste des fournisseurs</h2></router-link>
+    <router-link to="/map"><h2 class="menu-princip"> Voir la carte</h2></router-link>
     <router-view></router-view>
   </div>
 </template>
@@ -45,7 +45,7 @@ export default {
   margin-top: 60px;
 }
 
-h2 {
+.menu-princip {
 
   background-color: #42b983;
   box-sizing: border-box;

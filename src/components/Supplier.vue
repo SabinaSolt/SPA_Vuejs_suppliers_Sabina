@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1> Fournisseur: {{name}} </h1>
+        <h2> Fournisseur: {{name}} </h2>
         <h3  v-if ="status" style="color:green;"> A du stock? OK </h3>
         <h3 v-else style="color:red;"> A du stock? KO</h3>
         <h5>Date du dernier relevé :
@@ -23,12 +23,10 @@
 <script>
     export default {
         name: "Supplier",
-        data: function () {
-            return {
-                name: 'I <3 Algues',
-                status: false, // est ce qu'il y a du stock
-                checkedAt: new Date() /* date de la dernière mise à jour du stock*/}
-        }
+        props:  {
+                name: String,
+                status: Boolean, // est ce qu'il y a du stock
+                checkedAt: Date /* date de la dernière mise à jour du stock*/}
     }
 </script>
 
