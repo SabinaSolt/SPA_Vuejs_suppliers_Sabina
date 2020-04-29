@@ -1,7 +1,14 @@
 <template>
     <div>
         <h1 > Liste des fournisseurs: </h1>
-        <Supplier :name="name" :status="status" :checked-at="checkedAt"/>
+        <div >
+            <Supplier v-for="supplier in suppliers"
+                        :key="supplier.id"
+                        :name="supplier.name"
+                        :status="supplier.status"
+                        :checked-at="supplier.checkedAt"/>
+
+        </div>
     </div>
 
 </template>
@@ -15,11 +22,22 @@
         },
         data: function () {
             return {
-                name: 'I <3 Algues',
-                status: false, // est ce qu'il y a du stock
-                checkedAt: new Date() /* date de la dernière mise à jour du stock*/}
+                suppliers: [
+                    {
+                        id: 1,
+                        name: "I <3 Algues",
+                        status: true,
+                        checkedAt: new Date()
+                    },
+                    {
+                        id: 2,
+                        name: "Spiruline forever alive!!!",
+                        status: false,
+                        checkedAt: new Date()
+                    }
+                ]
+            }
         }
-
     }
 </script>
 

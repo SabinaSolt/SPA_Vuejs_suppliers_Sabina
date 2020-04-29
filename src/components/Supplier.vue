@@ -1,10 +1,11 @@
 <template>
-    <div>
-        <h2> Fournisseur: {{name}} </h2>
-        <h3  v-if ="status" style="color:green;"> A du stock? OK </h3>
-        <h3 v-else style="color:red;"> A du stock? KO</h3>
-        <h5>Date du dernier relevé :
-            {{checkedAt.toLocaleString({
+    <div >
+        <div class="fourn">
+            <h2> Fournisseur: {{name}} </h2>
+            <h3  v-if ="status" style="color:green;"> A du stock? OK </h3>
+            <h3 v-else style="color:red;"> A du stock? KO</h3>
+            <h5>Date du dernier relevé :
+                {{checkedAt.toLocaleString({
                 weekday:'short',
                 month: 'short',
                 day:'numeric',
@@ -14,7 +15,10 @@
                 second:'2-digit',
                 timeZone: 'UTC',
                 timeZoneName:'short'})}}
-        </h5>
+            </h5>
+        </div>
+
+        <br>
     </div>
 
 
@@ -31,5 +35,7 @@
 </script>
 
 <style scoped>
-
+.fourn {
+    border: 2px solid #2c3e50;
+}
 </style>
