@@ -6,7 +6,7 @@
                         :key="supplier.id"
                         :name="supplier.name"
                         :status="supplier.status"
-                        :checked-at="supplier.checkedAt"/>
+                        :checked-at="formatDate(supplier.checkedAt)"/>
 
         </div>
     </div>
@@ -15,10 +15,12 @@
 
 <script>
     import Supplier from "./Supplier";
+    import { format } from 'timeago.js';
     export default {
         name: "SuppliersList",
         components: {
             Supplier,
+
         },
         data: function () {
             return {
@@ -36,6 +38,12 @@
                         checkedAt: new Date()
                     }
                 ]
+            }
+        },
+
+        methods: {
+            formatDate: function (date) {
+               return format(date);
             }
         }
     }
