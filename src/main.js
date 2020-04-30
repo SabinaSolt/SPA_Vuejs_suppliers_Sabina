@@ -28,15 +28,11 @@ const router = new VueRouter ({
   mode: 'history',
   routes:[
     {path:'/', component: HelloWorld},
-    {path:'/suppliers', component:SuppliersList},
+    {path:'/suppliers',  component:SuppliersList},
     {path:'/supplier', component:Supplier},
     {path:'/map', component:SuppliersMap}
   ]
 });
-
-
-
-
 
 
 new Vue({
