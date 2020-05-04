@@ -28,16 +28,22 @@
             suppliers: Array,
             loading: Boolean,
             error: String,
+            //center:Array,
         },
         data() {
             return {
                 url: "https://{s}.tile.osm.org/{z}/{x}/{y}.png",
                 zoom: 6,
-                center: [46.5322, 2.9482],
+                center:  [46.5322, 2.5482],
                 bounds: null,
             };
         },
 
+        beforeCreate() {
+                  navigator.geolocation.getCurrentPosition((position) => {
+                      this.center= [position.coords.latitude, position.coords.longitude];
+                });
+        }
     }
 </script>
 

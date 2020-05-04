@@ -30,7 +30,7 @@ export default {
       suppliers: [],
       loading:false,
       error:null,
-
+      //  center:[],
     };
   },
   created() {
@@ -50,6 +50,10 @@ export default {
               this.loading=false;
               this.error=error;
             });
+      // navigator.geolocation.getCurrentPosition((position) => {
+      // this.center= [position.coords.latitude, position.coords.longitude];
+      // console.log(this.center);
+      // });
   },
 }
 
