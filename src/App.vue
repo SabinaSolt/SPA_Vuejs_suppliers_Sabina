@@ -7,6 +7,8 @@
 
     <router-link to="/suppliers"><h2 class="menu-princip">Consulter la liste des fournisseurs</h2></router-link>
     <router-link to="/map"><h2 class="menu-princip"> Voir la carte</h2></router-link>
+      <router-link to="/addsupplier"><h2 class="menu-princip"> Ajouter un fournisseur</h2></router-link>
+
     <router-view :suppliers="suppliers"
                  :loading="loading"
                  :error="error"></router-view>

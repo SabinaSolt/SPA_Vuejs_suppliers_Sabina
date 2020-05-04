@@ -5,7 +5,8 @@ import HelloWorld from "./components/HelloWorld";
 import SuppliersList from "./components/SuppliersList";
 import SuppliersMap from "./components/SuppliersMap";
 import Supplier from "./components/Supplier";
-
+import EditSupplier from "./components/EditSupplier";
+import AddSupplier from "./components/AddSupplier";
 // Import the Icon
 import { Icon } from "leaflet";
 // Import the whole Leaflet CSS
@@ -30,7 +31,9 @@ const router = new VueRouter ({
     {path:'/', component: HelloWorld},
     {path:'/suppliers',  component:SuppliersList},
     {path:'/supplier', component:Supplier},
-    {path:'/map', component:SuppliersMap}
+    {path:'/map', component:SuppliersMap},
+    {path:'/editsupplier',component:EditSupplier},
+    {path:'/addsupplier', component:AddSupplier}
   ]
 });
 
