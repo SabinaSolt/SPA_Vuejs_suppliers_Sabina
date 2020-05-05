@@ -15,9 +15,12 @@
 
             <Supplier v-for="supplier in suppliersFiltered()"
                         :key="supplier.id"
+                        :supplier-id="supplier.id"
                         :name="supplier.name"
                         :status="supplier.status"
-                        :checked-at="formatDate(supplier.checkedAt)"/>
+                        :checked-at="formatDate(supplier.checkedAt)"
+                        :latitude="supplier.latitude"
+                        :longitude="supplier.longitude"/>
 
         </div>
     </div>

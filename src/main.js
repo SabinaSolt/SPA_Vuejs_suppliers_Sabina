@@ -32,7 +32,7 @@ const router = new VueRouter ({
     {path:'/suppliers',  component:SuppliersList},
     {path:'/supplier', component:Supplier},
     {path:'/map', component:SuppliersMap},
-    {path:'/editsupplier',component:EditSupplier},
+    {path:'/editsupplier/:id', name:'EditSupplier', component:EditSupplier},
     {path:'/addsupplier', component:AddSupplier}
   ]
 });

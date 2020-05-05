@@ -36,12 +36,7 @@ export default {
     };
   },
   created() {
-    // try{
-    //     //   const response= await axios.get('https://api-suppliers.herokuapp.com/api/suppliers');
-    //     //     this.suppliers=response.data;
-    //     // } catch (error) {
-    //     //     console.log(error)
-    //     // }
+
     this.loading=true;
     axios.get('https://api-suppliers.herokuapp.com/api/suppliers')
             .then((response) =>{
@@ -56,6 +51,13 @@ export default {
       // this.center= [position.coords.latitude, position.coords.longitude];
       // console.log(this.center);
       // });
+
+    // try{
+    //     //   const response= await axios.get('https://api-suppliers.herokuapp.com/api/suppliers');
+    //     //     this.suppliers=response.data;
+    //     // } catch (error) {
+    //     //     console.log(error)
+    //     // }
   },
 }
 
