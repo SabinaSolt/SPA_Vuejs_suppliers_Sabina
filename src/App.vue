@@ -2,7 +2,7 @@
 <template>
 
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img alt="Vue logo" src="./assets/algues_logo.png" style="">
     <HelloWorld msg="Que voulez vous faire?"/>
 
     <router-link to="/suppliers"><h2 class="menu-princip">Consulter la liste des fournisseurs</h2></router-link>
